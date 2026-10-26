@@ -1,0 +1,40 @@
+{
+  "duration": 199.20833333333331,
+  "chapters": [
+    {
+      "id": "launch",
+      "title": "上线分工",
+      "start": 6.041666666666667
+    },
+    {
+      "id": "delivery",
+      "title": "客户交付",
+      "start": 34.5
+    },
+    {
+      "id": "expense",
+      "title": "费用报销",
+      "start": 67.33333333333333
+    },
+    {
+      "id": "change",
+      "title": "需求变更",
+      "start": 96.5
+    },
+    {
+      "id": "onboarding",
+      "title": "入职准备",
+      "start": 125.70833333333333
+    },
+    {
+      "id": "procurement",
+      "title": "采购协作",
+      "start": 157.33333333333331
+    },
+    {
+      "id": "overview",
+      "title": "授权工作台",
+      "start": 188.20833333333331
+    }
+  ]
+}
