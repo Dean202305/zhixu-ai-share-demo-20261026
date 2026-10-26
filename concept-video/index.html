@@ -5,16 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="color-scheme" content="light">
   <meta name="theme-color" content="#10283e">
-  <meta name="description" content="织序 AI 概念视频：在工作软件中发现协作提问、私聊询问、确认分工并跟进待办。58 秒手机竖版，原创示意界面。">
+  <meta name="description" content="织序 AI 多场景概念视频：上线分工、客户交付、费用报销、需求变更、入职准备和采购协作，配有中文合成旁白与字幕。">
   <title>织序 AI · 内嵌协作概念视频</title>
   <style>
     :root{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;color:#10283e;background:#f1f4f8;line-height:1.65}
-    *{box-sizing:border-box}body{margin:0}a{color:inherit}a:focus-visible,video:focus-visible{outline:3px solid #3370ff;outline-offset:5px}
+    *{box-sizing:border-box}body{margin:0}a{color:inherit}a:focus-visible,button:focus-visible,video:focus-visible{outline:3px solid #3370ff;outline-offset:5px}
     main{max-width:1100px;margin:auto;padding:46px 30px 26px;display:grid;grid-template-columns:1fr minmax(290px,405px);gap:66px;align-items:center;min-height:90svh}
     .eyebrow{font-size:14px;font-weight:650;color:#956e34;letter-spacing:.1em}.brand{font-size:20px;font-weight:700;margin-bottom:38px}
     h1{font-size:clamp(30px,4vw,46px);line-height:1.35;letter-spacing:-.02em;margin:14px 0 22px}p{margin:0 0 20px;color:#607184;font-size:16px}
     .steps{margin:26px 0;padding:0;list-style:none;counter-reset:step}.steps li{counter-increment:step;display:flex;align-items:center;gap:16px;margin:15px 0;font-weight:600}
     .steps li::before{content:"0" counter(step);font-size:13px;color:#a17b42;border:1px solid #dce2ea;border-radius:50%;width:32px;height:32px;display:grid;place-items:center}
+    .chapters{margin:28px 0}.chapters h2{font-size:15px;margin:0 0 12px;color:#607184;font-weight:600}.chapter-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+    .chapter-list button{font:inherit;min-height:44px;padding:9px 13px;text-align:left;color:#334b60;background:#fff;border:1px solid #d8e0e9;border-radius:9px;cursor:pointer;font-size:14px;line-height:1.45}
+    .chapter-list button:hover:not(:disabled){border-color:#a17b42;background:#fffcf6}.chapter-list button[aria-current="true"]{border-color:#a17b42;background:#fbf4e8;color:#795a2c}.chapter-list button:disabled{opacity:.6;cursor:default}.chapter-list button:last-child{grid-column:1/-1}
+    .chapter-status{min-height:21px;margin:9px 0 0;font-size:12px;color:#758294}.version-link{font-size:13px;margin:16px 0 0;color:#758294}.version-link a{text-underline-offset:3px}
     .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.actions a{padding:12px 20px;border:1px solid #ccd5df;border-radius:10px;text-decoration:none;font-weight:600;font-size:15px}.actions a:first-child{background:#10283e;color:white;border-color:#10283e}
     .frame{border-radius:22px;overflow:hidden;background:#10283e;box-shadow:0 20px 70px #10283e22;border:1px solid #dce4ee}video{display:block;width:100%;height:auto;aspect-ratio:9/16;object-fit:contain;background:#10283e}
     .meta{padding:12px 16px;font-size:12px;color:#c4d2de;display:flex;justify-content:space-between}.notice{font-size:13px;color:#758294;margin-top:28px;border-top:1px solid #dce3eb;padding-top:18px}
@@ -28,28 +32,96 @@
     <section class="copy" aria-label="概念说明">
       <div class="brand">织序 AI</div>
       <div class="intro">
-        <div class="eyebrow">58 秒 · 工作软件内嵌协作概念</div>
+        <div class="eyebrow">3 分 45 秒 · 六场景 · 中文合成旁白</div>
         <h1>从聊天中的提问，<br>到有归属的协作。</h1>
-        <p>在飞书风格的工作界面里，看织序如何先询问、再协助分工，最后进入待办跟进。</p>
+        <p>从上线前的分工，到报销缺材料、客户交期变化，看织序如何把具体卡点整理成有人确认、能继续推进的协作。</p>
       </div>
       <div class="details">
         <ol class="steps"><li>发现授权群中的协作问题</li><li>私聊询问，生成可修改草案</li><li>成员确认分工，持续跟进待办</li></ol>
+        <nav class="chapters" aria-label="视频章节">
+          <h2>选择一个工作场景</h2>
+          <div class="chapter-list">
+            <button type="button" data-chapter="launch" aria-controls="concept-video-player" disabled>01 · 上线分工</button>
+            <button type="button" data-chapter="delivery" aria-controls="concept-video-player" disabled>02 · 客户交付延期</button>
+            <button type="button" data-chapter="expense" aria-controls="concept-video-player" disabled>03 · 报销缺材料</button>
+            <button type="button" data-chapter="change" aria-controls="concept-video-player" disabled>04 · 需求变更影响</button>
+            <button type="button" data-chapter="onboarding" aria-controls="concept-video-player" disabled>05 · 入职准备</button>
+            <button type="button" data-chapter="procurement" aria-controls="concept-video-player" disabled>06 · 采购协作</button>
+            <button type="button" data-chapter="overview" aria-controls="concept-video-player" disabled>统一工作台 · 查看下一步</button>
+          </div>
+          <p class="chapter-status" role="status" aria-live="polite">正在载入章节，也可以直接播放视频。</p>
+        </nav>
         <div class="actions">
-          <a href="zhixu-ai-concept.mp4" download="织序AI-内嵌协作概念视频.mp4">下载 MP4</a>
+          <a href="zhixu-ai-scenarios-voiceover.mp4" download="织序AI-多场景中文旁白演示.mp4">下载旁白版 MP4</a>
           <a href="../">体验工作台 Demo</a>
         </div>
-        <p class="notice">这是原创概念演示，包含中文字幕和轻提示音，无配音。画面中的人物、聊天与状态均为示例，并非真实飞书或钉钉录屏；实际接入需要相应企业及平台授权。</p>
+        <p class="version-link"><a href="zhixu-ai-concept.mp4" download="织序AI-58秒简版.mp4">保存原 58 秒简版</a></p>
+        <p class="notice">中文旁白由语音合成生成。界面、人物、消息与业务状态均为概念示意，并非真实飞书或钉钉录屏，不表示已完成实际平台接入。</p>
       </div>
     </section>
     <section class="frame" aria-label="织序 AI 概念视频">
-      <video controls playsinline preload="metadata" poster="poster.jpg" aria-label="织序 AI 内嵌协作概念演示，58秒，已内嵌中文字幕">
-        <source src="zhixu-ai-concept.mp4" type="video/mp4">
-        <track src="captions.vtt" kind="subtitles" srclang="zh-CN" label="中文说明（画面已内嵌）">
-        你的浏览器暂不支持视频播放，可<a href="zhixu-ai-concept.mp4">打开 MP4 文件</a>查看。
+      <video id="concept-video-player" controls playsinline preload="metadata" poster="poster-v2.jpg" aria-label="织序 AI 六个工作场景概念演示，含中文合成旁白与字幕">
+        <source src="zhixu-ai-scenarios-voiceover.mp4" type="video/mp4">
+        <track src="captions-v2.vtt" kind="subtitles" srclang="zh-CN" label="中文旁白字幕（画面已内嵌）">
+        你的浏览器暂不支持视频播放，可<a href="zhixu-ai-scenarios-voiceover.mp4">打开 MP4 文件</a>查看。
       </video>
-      <div class="meta"><span>点击播放 · 支持全屏</span><span>1080 × 1920 / MP4</span></div>
+      <div class="meta"><span>点击播放 · 中文合成旁白</span><span>1080 × 1920 / MP4</span></div>
     </section>
   </main>
   <footer>织序 AI · 产品概念预览 · 非真实平台录屏</footer>
+  <script>
+    (() => {
+      const video = document.querySelector('#concept-video-player');
+      const buttons = [...document.querySelectorAll('[data-chapter]')];
+      const status = document.querySelector('.chapter-status');
+      let chapters = [];
+      let pendingSeek = null;
+      let action = 0;
+      const updateChapter = () => {
+        const eligible = chapters.filter(chapter => chapter.start <= video.currentTime + 0.1);
+        const active = eligible[eligible.length - 1];
+        buttons.forEach(button => {
+          if (active && button.dataset.chapter === active.id) button.setAttribute('aria-current', 'true');
+          else button.removeAttribute('aria-current');
+        });
+      };
+      const applySeek = () => {
+        if (pendingSeek === null || video.readyState < 1) return;
+        const limit = Number.isFinite(video.duration) ? Math.max(0, video.duration - 0.05) : pendingSeek;
+        video.currentTime = Math.min(pendingSeek, limit);
+        pendingSeek = null;
+        updateChapter();
+      };
+      video.addEventListener('loadedmetadata', applySeek);
+      video.addEventListener('timeupdate', updateChapter);
+      buttons.forEach(button => button.addEventListener('click', async () => {
+        const chapter = chapters.find(item => item.id === button.dataset.chapter);
+        if (!chapter) return;
+        const currentAction = ++action;
+        pendingSeek = chapter.start;
+        applySeek();
+        video.scrollIntoView({ behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'center' });
+        status.textContent = `正在播放：${chapter.title || button.textContent.trim()}`;
+        try {
+          await video.play();
+        } catch {
+          if (action === currentAction) status.textContent = '已定位到所选章节，请点击播放器开始播放。';
+        }
+      }));
+      fetch('chapters-v2.json')
+        .then(response => { if (!response.ok) throw new Error('Chapters unavailable'); return response.json(); })
+        .then(payload => {
+          const items = Array.isArray(payload) ? payload : payload.chapters;
+          if (!Array.isArray(items)) throw new Error('Invalid chapters');
+          chapters = items.filter(item => item && typeof item.id === 'string' && Number.isFinite(item.start) && item.start >= 0)
+            .sort((a, b) => a.start - b.start);
+          const available = new Set(chapters.map(chapter => chapter.id));
+          buttons.forEach(button => { button.disabled = !available.has(button.dataset.chapter); });
+          status.textContent = chapters.length ? '点击场景可跳转；也可以从头播放。' : '章节暂不可用，可拖动视频进度条观看。';
+          updateChapter();
+        })
+        .catch(() => { status.textContent = '章节暂不可用，可直接播放视频或拖动进度条观看。'; });
+    })();
+  </script>
 </body>
 </html>
