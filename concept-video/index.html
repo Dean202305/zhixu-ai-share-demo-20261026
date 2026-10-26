@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#10283e">
+  <meta name="description" content="织序 AI 概念视频：在工作软件中发现协作提问、私聊询问、确认分工并跟进待办。58 秒手机竖版，原创示意界面。">
+  <title>织序 AI · 内嵌协作概念视频</title>
+  <style>
+    :root{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;color:#10283e;background:#f1f4f8;line-height:1.65}
+    *{box-sizing:border-box}body{margin:0}a{color:inherit}a:focus-visible,video:focus-visible{outline:3px solid #3370ff;outline-offset:5px}
+    main{max-width:1100px;margin:auto;padding:46px 30px 26px;display:grid;grid-template-columns:1fr minmax(290px,405px);gap:66px;align-items:center;min-height:90svh}
+    .eyebrow{font-size:14px;font-weight:650;color:#956e34;letter-spacing:.1em}.brand{font-size:20px;font-weight:700;margin-bottom:38px}
+    h1{font-size:clamp(30px,4vw,46px);line-height:1.35;letter-spacing:-.02em;margin:14px 0 22px}p{margin:0 0 20px;color:#607184;font-size:16px}
+    .steps{margin:26px 0;padding:0;list-style:none;counter-reset:step}.steps li{counter-increment:step;display:flex;align-items:center;gap:16px;margin:15px 0;font-weight:600}
+    .steps li::before{content:"0" counter(step);font-size:13px;color:#a17b42;border:1px solid #dce2ea;border-radius:50%;width:32px;height:32px;display:grid;place-items:center}
+    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.actions a{padding:12px 20px;border:1px solid #ccd5df;border-radius:10px;text-decoration:none;font-weight:600;font-size:15px}.actions a:first-child{background:#10283e;color:white;border-color:#10283e}
+    .frame{border-radius:22px;overflow:hidden;background:#10283e;box-shadow:0 20px 70px #10283e22;border:1px solid #dce4ee}video{display:block;width:100%;height:auto;aspect-ratio:9/16;object-fit:contain;background:#10283e}
+    .meta{padding:12px 16px;font-size:12px;color:#c4d2de;display:flex;justify-content:space-between}.notice{font-size:13px;color:#758294;margin-top:28px;border-top:1px solid #dce3eb;padding-top:18px}
+    footer{padding:16px 24px 30px;text-align:center;font-size:12px;color:#7b8796}
+    @media(max-width:720px){main{display:flex;flex-direction:column;gap:24px;padding:24px 18px 10px;align-items:stretch}.copy{display:contents}.brand{margin:0;order:0}.intro{order:1}h1{font-size:29px;margin:8px 0 12px}.intro p{font-size:14px;margin-bottom:0}.frame{order:2;width:min(100%,405px);align-self:center}.details{order:3}.steps{display:none}.actions{margin-top:0;justify-content:center}.notice{margin-top:20px}footer{padding-bottom:24px}}
+    @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto}}
+  </style>
+</head>
+<body>
+  <main>
+    <section class="copy" aria-label="概念说明">
+      <div class="brand">织序 AI</div>
+      <div class="intro">
+        <div class="eyebrow">58 秒 · 工作软件内嵌协作概念</div>
+        <h1>从聊天中的提问，<br>到有归属的协作。</h1>
+        <p>在飞书风格的工作界面里，看织序如何先询问、再协助分工，最后进入待办跟进。</p>
+      </div>
+      <div class="details">
+        <ol class="steps"><li>发现授权群中的协作问题</li><li>私聊询问，生成可修改草案</li><li>成员确认分工，持续跟进待办</li></ol>
+        <div class="actions">
+          <a href="zhixu-ai-concept.mp4" download="织序AI-内嵌协作概念视频.mp4">下载 MP4</a>
+          <a href="../">体验工作台 Demo</a>
+        </div>
+        <p class="notice">这是原创概念演示，包含中文字幕和轻提示音，无配音。画面中的人物、聊天与状态均为示例，并非真实飞书或钉钉录屏；实际接入需要相应企业及平台授权。</p>
+      </div>
+    </section>
+    <section class="frame" aria-label="织序 AI 概念视频">
+      <video controls playsinline preload="metadata" poster="poster.jpg" aria-label="织序 AI 内嵌协作概念演示，58秒，已内嵌中文字幕">
+        <source src="zhixu-ai-concept.mp4" type="video/mp4">
+        <track src="captions.vtt" kind="subtitles" srclang="zh-CN" label="中文说明（画面已内嵌）">
+        你的浏览器暂不支持视频播放，可<a href="zhixu-ai-concept.mp4">打开 MP4 文件</a>查看。
+      </video>
+      <div class="meta"><span>点击播放 · 支持全屏</span><span>1080 × 1920 / MP4</span></div>
+    </section>
+  </main>
+  <footer>织序 AI · 产品概念预览 · 非真实平台录屏</footer>
+</body>
+</html>
